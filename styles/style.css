@@ -1,0 +1,509 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; 
+}
+/*------------cuerpo de la pagina, color negro ------------------*/
+
+body{
+    background: linear-gradient(to bottom, black, lightblue);
+       
+}
+/*-----------------------------------------------Lista de navegacion entre paginas y secciones---------------------------------------------*/
+a{
+    text-decoration: none;
+    color: #9a9090cc;
+    transition: .5s;
+}
+
+ul{
+    list-style: none;
+}
+
+/*------------------------------------------------------------////INDEX////----------------------------------------------------------------------*/
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 100px;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 190px;
+    padding: 0 10px;
+}
+/*-------------------------logo------------------------------*/
+.logo{
+    width: 250px;
+    height: auto;   
+}
+
+.logo img{
+    display: block;
+    width: 250px;
+    height: auto;
+    top: 1px;
+}
+/*-------------------------------Menu-------------------------*/
+.main-menu{
+    margin-right: 350px;
+    
+}
+.main-menu ul{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+.main-menu ul li{
+   
+    height: 100%;
+    margin-right: 20px;
+    padding-top:100px;
+}
+nav.main-menu ul li a:hover {
+    color: white;     
+}
+/*-------------------Eslogan de la pagina-----------------------*/
+.eslogan{
+    color: #fff;;
+    margin-right: 154px;
+    font-size: 15pt;
+}
+/*-------------------index Nosotros imagen-----------------------*/
+.nosotros{
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    border-top: 2px solid;
+    padding-top: 10px;
+    border-bottom: 2px solid ;
+    padding-bottom: 10px;
+    border-color: #0ef;
+    
+}
+.nosotrostxt{
+    width: 1000px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: 200px;
+    font-size: 20px;
+    color: whitesmoke;
+   
+}
+
+/*------------------------------------------------IMAGENES DE SECCION-------------------------------------*/
+.section-b{
+    background-image: url('../img/earth.jpg');
+}
+
+
+
+
+/*----------------------------------------------////SECCION ESTABLECIDA////----------------------------------------------------------------------*/
+section{
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size:cover;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*-----------------------------------------------------------////MISION Y VISION////------------------------------------------------------------*/
+.misvis-text{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    color: #fff;
+    height: 30px;
+}
+.section-inner{
+    color: #0ef;
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    max-width: 960px;
+}
+.section-inner h3{
+    position: absolute;
+    bottom:250px;
+    left: 100px;
+    color: #fff;
+    height: 80px;
+
+}
+.misiontextp{
+    margin-bottom :40px;
+    text-align: justify;
+    color:whitesmoke;
+}
+.visiontextp{
+    margin-top: 10px;
+    margin-bottom: 200px;
+    text-align: justify;
+    color: whitesmoke;
+}
+.txtmisionvision{
+    margin-left: 900px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    width: 400px;
+    border-top: 2px solid;
+    padding-top: 10px;
+    border-bottom: 2px solid ;
+    border-color: #0ef;
+    padding-bottom: 10px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*-----------------------------------------Imagenes en la seccion------------------------------------------*/
+
+
+.section-D{
+        background: linear-gradient(to bottom, black, white);
+        
+      }
+
+.section-E{
+        background: linear-gradient(to bottom, black, white);
+}
+.section-F{
+    background: linear-gradient(to bottom, black, white);
+}
+
+/*------------------------------------------------------------////ASTERI////--------------------------------------------------------------------*/    
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .rocket-image {
+    flex: 0;
+    margin-top: 150px;
+  }
+  .as{
+    flex: 0;
+    margin-top: 100px;
+  }
+  
+  .rocket-info {
+    flex: 1;
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .rocket-info-item {
+
+    margin-top: 10px;
+    margin-right:20px;
+    font-size: 20pt;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease-in-out, transform 2s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  
+
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.section-animate{
+    animation: fadein 3s ease-in-out;
+}
+
+/*------------------------Texto de ASTERI.html------------------------------------------------*/
+
+table {
+    text-align: left;
+  }
+  
+  ul.asteri {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px; 
+    color: #37424b;
+  }
+  
+  li {
+    margin-bottom: 10px; /* Adjust the value to increase or decrease the spacing */
+  }
+  
+  .informacion-asteri{
+    width: 500px;
+    margin-right:900px;
+    margin-bottom:40px;
+    color: #37424b;
+    font-size: 20px;
+  }
+  
+  .informacion-asteri1{
+    width: 500px;
+    margin-right:900px;
+    margin-bottom:150px;
+    margin-top: 50px;
+    color: #37424b;
+    font-size: 20px;
+  }
+/*--------------------------------TITULO----------------------------------*/
+  .txtasteri{
+    margin-left: 1200px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-top: 2px solid;
+    padding-top: 10px;
+    border-bottom: 2px solid ;
+    border-color: #0ef;
+    padding-bottom: 10px;
+    display: block;
+}
+.section-inner-center h3{
+    font-size: 70px;
+    margin-bottom: 300px;
+    margin-left: 800px;
+    animation: fadein 0.9s ease-in-out;
+}
+.section-inner-center{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fee8e8;
+}
+.veaelmotor{
+   color: #37424b;
+   border-bottom: 2px solid ;
+   font-size: 20pt;
+   margin-left:1000px;
+}
+
+.miamor{
+   
+    margin-top: 30px;
+    margin-bottom:200px;
+    margin-left: 100px;
+    padding-left: 600px;
+    text-align:left;
+    color: whitesmoke;
+    text-align:left;
+    font-size: 15pt;
+  
+}
+.tituloaoruz{
+    color:whitesmoke;
+    font-size: 25pt;
+    margin-left: 1036px;
+    margin-bottom: 10px;
+}
+.motoras {
+    float: left;
+    margin-right: 100px; /* Ajusta el margen derecho según tus necesidades */
+    
+    
+  }
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------////PROXIMOS EVENTOS////-------------------------------------------------------*/
+
+
+.txteventos{
+    margin-left:900px;
+    margin-bottom: 60px;
+    width: 500px;
+    border-top: 2px solid;
+    padding-top: 10px;
+    border-bottom: 2px solid ;
+    border-color: #0ef;
+    padding-bottom: 10px;
+}
+.titulo-evento{
+    text-align:left ;
+    color:whitesmoke;
+    font-size: 10pt;
+    margin-bottom: 50px;
+}
+.titulo-evento1{
+    margin-bottom: 60px;
+    font-size: 20pt;
+}
+.lista-eventos{
+    text-align: left;
+    margin-right: 500px;
+    margin-bottom: 50px;
+}
+.tabla-eventos {
+    width: 600px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+
+    color: #ffffff;
+  }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*---------------------------------------------------////fondos para paginas externas////-------------------------------------------------------*/
+
+.bg-misvis{
+    background-image: url('../img/fonmis.jpg');
+}
+.bg-asteri{
+    background-image: url('../img/fondo.png');
+}
+
+.bg-eventos{
+    background-image: url('../img/fondoeventos.jpg ');
+}
+
+.bg-siguenos{
+    background-image: linear-gradient(to bottom, #0074D9, #000000);
+}
+.bg-index{
+    background-color: black;
+}
+.bg-aoruz{
+    background-image: linear-gradient(to bottom, rgb(49, 49, 49), rgb(0, 0, 0));
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*-----------------------------------------------////Media////----------------------------------------*/
+
+@media(max-width: 960px){
+    .main-menu{
+        display: none;
+    
+    }
+    }
+    
+    @media(max-width: 600px){
+        .section-inner{
+            bottom: 75px;
+            left:20px;
+        }
+    }
+    
+
+/*pie de pagina*/
+
+footer{
+    background-color: #000000;
+    position: relative;
+    padding: 15px 0;
+    color: #fff;
+   
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+footer ul li{
+    margin-right: 30px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.0;
+}
+
+footer ul li a::hover {
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
